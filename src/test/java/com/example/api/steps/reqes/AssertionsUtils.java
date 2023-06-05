@@ -1,6 +1,9 @@
 package com.example.api.steps.reqes;
 
 import com.example.services.reqres.entities.Support;
+import com.example.services.reqres.entities.UserToken;
+import com.example.services.reqres.response.ResourceListResponse;
+import com.example.services.reqres.response.ResourceResponse;
 import com.example.services.reqres.response.UsersListResponse;
 import com.example.services.reqres.response.UsersResponse;
 import org.assertj.core.api.SoftAssertions;
@@ -18,6 +21,17 @@ public class AssertionsUtils {
 
         assertSupport(softly, usersResponse.getSupport());
     }
+
+    public static void assertSupport(SoftAssertions softly, ResourceListResponse resourceListResponse) {
+
+        assertSupport(softly, resourceListResponse.getSupport());
+    }
+
+    public static void assertSupport(SoftAssertions softly, ResourceResponse resourceResponse) {
+
+        assertSupport(softly, resourceResponse.getSupport());
+    }
+
 
 
     // region private UTILS

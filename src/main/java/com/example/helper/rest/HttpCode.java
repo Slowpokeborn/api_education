@@ -17,6 +17,10 @@ public enum HttpCode {
             "Created",
             201
     ),
+    DELETED(
+            "Deleted",
+            204
+    ),
     BAD_REQUEST(
             "Bad Request",
             400

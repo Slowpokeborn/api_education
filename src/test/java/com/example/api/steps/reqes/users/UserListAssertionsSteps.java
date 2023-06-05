@@ -29,7 +29,7 @@ public class UserListAssertionsSteps {
         SoftAssertions softly = new SoftAssertions();
 
         softly.assertThat(usersListResponse)
-                .as("UsersList is not null")
+                .as("UsersList is null")
                 .isNotNull();
         softly.assertThat(usersListResponse.getData().size())
                 .as("UsersList.data.size = 0")

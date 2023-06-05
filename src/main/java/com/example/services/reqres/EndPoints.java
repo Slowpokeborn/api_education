@@ -15,6 +15,15 @@ public enum EndPoints {
     USERS(
             "EndPoint - \"users\"",
             "users"
+    ),
+    UNKNOWN(
+            "EndPoint - \"unknown\"",
+                    "unknown"),
+    REGISTER("EndPoint - \"register\"",
+            "register"
+    ),
+    LOGIN("EndPoint - \"login\"",
+                     "login"
     );
 
     private final String description;
